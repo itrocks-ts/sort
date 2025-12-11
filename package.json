@@ -26,8 +26,13 @@
 	],
 	"homepage": "https://it.rocks",
 	"keywords": [
+		"ascending",
 		"backend",
+		"class",
+		"decorator",
 		"it.rocks",
+		"ordering",
+		"properties",
 		"sort"
 	],
 	"license": "ISC",
@@ -42,5 +47,5 @@
 		"build:esm": "tsc -p tsconfig.esm.json"
 	},
 	"types": "./esm/sort.d.ts",
-	"version": "0.0.2"
+	"version": "0.0.3"
 }

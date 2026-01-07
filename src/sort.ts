@@ -5,7 +5,7 @@ import { Reverse }      from './reverse'
 
 const SORT = Symbol('sort')
 
-type PropertyPath = string | Reverse
+export type PropertyPath = string | Reverse
 
 export { Reverse }
 

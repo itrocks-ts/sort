@@ -8,21 +8,17 @@
 	},
 	"description": "Declare a default object sort order in your business classes",
 	"devDependencies": {
-		"@types/node": "^24.10",
-		"typescript": "~5.9"
+		"typescript": "^6.0"
 	},
 	"engines": {
-		"node": ">=18"
+		"node": ">=24"
 	},
-	"exports": {
-		"import": "./esm/sort.js",
-		"require": "./cjs/sort.js"
-	},
+	"exports": "./cjs/sort.js",
 	"files": [
 		"LICENSE",
 		"README.md",
-		"*/*.d.ts",
-		"*/*.js"
+		"cjs",
+		"!*.map"
 	],
 	"homepage": "https://it.rocks",
 	"keywords": [
@@ -42,10 +38,7 @@
 		"url": "git+https://github.com/itrocks-ts/sort.git"
 	},
 	"scripts": {
-		"build": "npm run build:cjs && npm run build:esm",
-		"build:cjs": "tsc -p tsconfig.cjs.json",
-		"build:esm": "tsc -p tsconfig.esm.json"
+		"build": "tsc"
 	},
-	"types": "./esm/sort.d.ts",
-	"version": "0.1.0"
+	"version": "0.1.1"
 }
